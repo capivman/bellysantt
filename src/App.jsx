@@ -1,11 +1,15 @@
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import Gallery from "./pages/Gallery";
+
 function App() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-black">
-      <h1 className="text-5xl font-bold text-white">
-        BellySantt
-      </h1>
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/gallery" element={<Gallery />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
