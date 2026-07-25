@@ -1,5 +1,5 @@
 import Navbar from "../components/layout/Navbar";
-import GalleryGrid from "../components/GalleryGrid";
+import GalleryGrid from "../components/ui/GalleryGrid";
 
 function Gallery() {
   return (
@@ -7,7 +7,6 @@ function Gallery() {
       <Navbar />
 
       <main className="pt-18">
-
         <GalleryGrid />
       </main>
     </>
