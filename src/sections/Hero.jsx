@@ -8,11 +8,11 @@ function Hero() {
       id="home"
       className="flex min-h-screen flex-col items-center justify-start px-6 pt-25"
     >
-      <h2 className="title-font mb-12 max-w-sm text-center text-3xl leading-tight text-white drop-shadow-lg">
+      <h2 className="title-font mb-10 max-w-sm text-center text-2xl leading-tight text-white drop-shadow-lg">
         Eternize seus momentos através das minhas lentes!
       </h2>
 
-      <div className="mb-15">
+      <div className="mb-10">
         <HeroSlider />
       </div>
 

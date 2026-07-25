@@ -13,25 +13,40 @@
   font-family: "Henny Penny", cursive;
 }
 
+html {
+  scroll-behavior: smooth;
+  min-height: 100%;
+  background: #000;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
 body {
   background-image:
     linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .8)),
     url("./assets/images/churchSide.jpg");
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
   color: white;
-}
-
-html {
-  scroll-behavior: smooth;
+  margin: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+  background-color: #000;
+  scrollbar-width: none;
 }
 
 .nav-link {
   transition: all .3s ease;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
 }
 
 .nav-link:hover {
@@ -41,4 +56,17 @@ html {
     0 0 18px rgba(220,20,60,.3),
     0 0 30px rgba(220,20,60,.1);
   transform: scale(1.1);
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#root {
+  min-height: 100%;
+  overflow-x: hidden;
 }

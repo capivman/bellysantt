@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# To Not leak info
+.env
+.env.*
+!.env.example
+

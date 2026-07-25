@@ -6,7 +6,7 @@ function Gallery() {
     <>
       <Navbar />
 
-      <main className="pt-18">
+      <main className="pt-[calc(4rem+env(safe-area-inset-top))]">
         <GalleryGrid />
       </main>
     </>
