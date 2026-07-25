@@ -2,6 +2,7 @@ import Navbar from "./components/layout/Navbar";
 
 import Hero from "./sections/Hero";
 import About from "./sections/About";
+import Contact from "./sections/Contact";
 
 function App() {
   return (
@@ -9,8 +10,9 @@ function App() {
       <Navbar />
 
       <main>
-        <Hero />
-        <About />
+      <Hero />
+      <About />
+      <Contact />
       </main>
     </>
   );

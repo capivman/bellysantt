@@ -23,12 +23,12 @@ function Hero() {
           rounded-xl
           border-3
           border-[#DC143C]
-          bg-[#DC143C]/10
+          bg-[#DC143C]/15
           px-6
           py-3
           text-2xl
           text-white
-          shadow-[0_0_18px_rgba(220,20,60,.6)]
+          shadow-[0_0_18px_rgba(220,20,60,.7)]
           transition-all
           duration-300
           hover:scale-105

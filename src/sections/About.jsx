@@ -17,7 +17,7 @@ function About() {
   return (
     <section
       id="about"
-      className="scroll-mt-16 flex min-h-screen flex-col items-center justify-start px-8 py-16"
+      className="scroll-mt-16 flex min-h-screen flex-col items-center justify-start px-8 py-10"
     >
       <div className="relative mb-5">
 <div className="absolute -bottom-0 -left-6">
@@ -70,14 +70,32 @@ function About() {
         e histórias que merecem ser eternizadas.
       </p>
 
-      <a
-        href="https://instagram.com/bellysantt"
-        target="_blank"
-        rel="noreferrer"
-        className="title-font mt-5 rounded-xl border-2 border-[#DC143C] bg-[#DC143C]/10 px-6 py-3 text-xl text-white transition-all duration-300 hover:scale-105 hover:bg-[#DC143C] hover:shadow-[0_0_25px_rgba(220,20,60,.7)]"
-      >
-        Instagram
-      </a>
+<a
+  href="https://instagram.com/bellysantt"
+  target="_blank"
+  rel="noreferrer"
+  className="
+    title-font
+    mt-5
+    rounded-xl
+    border-3
+    border-[#DC143C]
+    bg-[#DC143C]/10
+    px-6
+    py-3
+    text-xl
+    text-white
+    shadow-[0_0_18px_rgba(220,20,60,.7)]
+    transition-all
+    duration-300
+    hover:scale-105
+    hover:bg-[#DC143C]
+    hover:shadow-[0_0_30px_rgba(220,20,60,.8)]
+    active:scale-95
+  "
+>
+  Instagram
+</a>
     </section>
   );
 }

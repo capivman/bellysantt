@@ -33,18 +33,19 @@ function MobileMenu({ isOpen, setIsOpen }) {
           </h2>
 
           <nav className="flex flex-col items-center gap-8">
-            <Link
-              to="/"
+
+            <a
+              href="#home"
               onClick={() => setIsOpen(false)}
-              className="title-font text-4xl text-white transition-all duration-300 hover:scale-110 hover:text-red-400"
+              className="title-font nav-link text-4xl text-white"
             >
               Início
-            </Link>
+            </a>
 
             <a
               href="#about"
               onClick={() => setIsOpen(false)}
-              className="title-font text-4xl text-white transition-all duration-300 hover:scale-110 hover:text-red-400"
+              className="title-font nav-link text-4xl text-white"
             >
               Sobre
             </a>
@@ -52,7 +53,7 @@ function MobileMenu({ isOpen, setIsOpen }) {
             <Link
               to="/gallery"
               onClick={() => setIsOpen(false)}
-              className="title-font text-4xl text-white transition-all duration-300 hover:scale-110 hover:text-red-400"
+              className="title-font nav-link text-4xl text-white"
             >
               Galeria
             </Link>
@@ -60,7 +61,7 @@ function MobileMenu({ isOpen, setIsOpen }) {
             <a
               href="#contact"
               onClick={() => setIsOpen(false)}
-              className="title-font text-4xl text-white transition-all duration-300 hover:scale-110 hover:text-red-400"
+              className="title-font nav-link text-4xl text-white"
             >
               Contato
             </a>
