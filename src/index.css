@@ -23,9 +23,9 @@ html {
 
 body {
   background-image:
-    linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .8)),
+    linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)),
     url("./assets/images/churchSide.jpg");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
