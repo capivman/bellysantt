@@ -1,10 +1,25 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 
 import logo from "../../assets/logo/logoBellySantt.png";
 
 function MobileMenu({ isOpen, setIsOpen }) {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const goToSection = (section) => {
+    setIsOpen(false);
+
+    if (location.pathname === "/") {
+      document.getElementById(section)?.scrollIntoView({
+        behavior: "smooth",
+      });
+    } else {
+      navigate(`/#${section}`);
+    }
+  };
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -33,22 +48,19 @@ function MobileMenu({ isOpen, setIsOpen }) {
           </h2>
 
           <nav className="flex flex-col items-center gap-8">
-
-            <a
-              href="#home"
-              onClick={() => setIsOpen(false)}
+            <button
+              onClick={() => goToSection("home")}
               className="title-font nav-link text-4xl text-white"
             >
               Início
-            </a>
+            </button>
 
-            <a
-              href="#about"
-              onClick={() => setIsOpen(false)}
+            <button
+              onClick={() => goToSection("about")}
               className="title-font nav-link text-4xl text-white"
             >
               Sobre
-            </a>
+            </button>
 
             <Link
               to="/gallery"
@@ -58,13 +70,12 @@ function MobileMenu({ isOpen, setIsOpen }) {
               Galeria
             </Link>
 
-            <a
-              href="#contact"
-              onClick={() => setIsOpen(false)}
+            <button
+              onClick={() => goToSection("contact")}
               className="title-font nav-link text-4xl text-white"
             >
               Contato
-            </a>
+            </button>
           </nav>
         </motion.div>
       )}

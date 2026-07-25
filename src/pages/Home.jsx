@@ -7,9 +7,12 @@ function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Contact />
+
+      <main>
+        <Hero />
+        <About />
+        <Contact />
+      </main>
     </>
   );
 }

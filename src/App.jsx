@@ -1,19 +1,19 @@
-import Navbar from "./components/layout/Navbar";
+import { Routes, Route } from "react-router-dom";
 
-import Hero from "./sections/Hero";
-import About from "./sections/About";
-import Contact from "./sections/Contact";
+import ScrollToHash from "./components/ScrollToHash";
+
+import Home from "./pages/Home";
+import Gallery from "./pages/Gallery";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <ScrollToHash />
 
-      <main>
-      <Hero />
-      <About />
-      <Contact />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/gallery" element={<Gallery />} />
+      </Routes>
     </>
   );
 }
