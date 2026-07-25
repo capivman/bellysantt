@@ -1,1 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Montenegrin+Gothic+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Montenegrin+Gothic+One&display=swap');
+
 @import "tailwindcss";
+
+:root {
+  --color-primary: crimson;
+  --color-background: #000000;
+  --color-text: #ffffff;
+  --color-whatsapp: #25D366;
+}
+
+.title-font {
+  /* font-family: "Montenegrin Gothic One", serif;  */
+  font-family: "Henny Penny", cursive;
+  /* font-family: old english text mt, serif; */
+}
+
+body {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .8)),
+    url("./assets/images/churchSide.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
