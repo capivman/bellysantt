@@ -23,8 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
-# To Not leak info
+# Environment files
 .env
 .env.*
 !.env.example
-
+rename.js
